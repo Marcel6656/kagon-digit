@@ -221,8 +221,8 @@
 /* --- WhatsApp Float Button --- */
 .whatsapp-float {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 100px;
+    right: 80px;
     background: #25d366;
     color: #fff;
     width: 60px;
@@ -800,8 +800,8 @@ main {
 /* --- Chatbot Styles --- */
 #chatbot {
     position: fixed;
-    bottom: 20px;
-    right: 100px;
+    bottom: 100px;
+    right: 140px;
     z-index: 1000;
 }
 #chatbot-toggle {
