@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guide gratuit pour automatiser votre service client sur WhatsApp Business. Téléchargez-le maintenant !">
+    <meta name="keywords" content="guide WhatsApp Business, automatisation service client, lead magnet">
+    <meta name="author" content="Kagon’s Digital Agency">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Guide Gratuit WhatsApp Business | Kagon’s Digital Agency</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        function handleLeadForm(e) {
+            e.preventDefault();
+            document.getElementById('lead-form').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <section class="lead-section">
+        <h1>Le guide gratuit pour automatiser votre service client sur WhatsApp Business</h1>
+        <p>Recevez immédiatement votre guide PDF en laissant votre Email ou WhatsApp.<br>Optimisé pour mobile.</p>
+        <form class="lead-form" id="lead-form" onsubmit="handleLeadForm(event)">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <input type="text" name="whatsapp" placeholder="Votre numéro WhatsApp (optionnel)">
+            <button type="submit">Recevoir le guide gratuit</button>
+        </form>
+        <div id="success-message" class="success-message" style="display:none;">
+            Merci ! Le guide vous a été envoyé par email (simulation).<br>Notre équipe vous contactera sous peu.
+        </div>
+    </section>
+    <script>
+        function toggleDropdown(event) {
+            event.preventDefault();
+            const dropdown = event.target.parentElement;
+            dropdown.classList.toggle('active');
+        }
+    </script>
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="Contactez-nous sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>

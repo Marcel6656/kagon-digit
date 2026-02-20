@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web & Automation : Création de sites web, tunnels de vente et automatisation WhatsApp.">
+    <meta name="keywords" content="création sites web, tunnels de vente, automatisation WhatsApp, CRM">
+    <meta name="author" content="Kagon’s Digital Agency">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Développeur Web & Mobile | Kagon's Digital Agency</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="assets/logo.jpg" alt="Kagon's Digital Agency Logo" class="logo-img"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)">Nos Pôles d'Expertise</a>
+                    <ul class="dropdown-content">
+                        <li><a href="academy.html">Kagon's Academy</a></li>
+                        <li><a href="media.html">Media & Vidéo</a></li>
+                        <li><a href="web.html">Web & Automation</a></li>
+                        <li><a href="marketing.html">Marketing & Stratégie</a></li>
+                        <li><a href="branding.html">Branding & Merch</a></li>
+                        <li><a href="events.html">Events Agency</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="academy.html#cta" class="cta-btn">S'inscrire / Devis</a>
+        </nav>
+    </header>
+    <main>
+        <section class="web-hero">
+            <h1>Développeur Web & Mobile</h1>
+            <p>Développement de sites web modernes, applications mobiles et solutions digitales innovantes pour transformer votre vision en réalité.</p>
+        </section>
+        <section class="web-details">
+            <h2>Pourquoi choisir notre expertise en développement ?</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Sites Web Modernes</h3>
+                    <p>Technologie responsive et SEO optimisé pour votre visibilité.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Applications Mobiles</h3>
+                    <p>Performantes sur iOS et Android avec une excellente UX.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Solutions Personnalisées</h3>
+                    <p>Adaptées à vos besoins spécifiques et votre budget.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Support & Maintenance</h3>
+                    <p>À long terme pour votre tranquillité d'esprit.</p>
+                </div>
+            </div>
+        </section>
+        <section class="web-examples">
+            <h2>Quelques réalisations</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Site vitrine">
+                    <div class="overlay">
+                        <h3>Site Vitrine</h3>
+                        <p>Design moderne et responsive</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Tunnel de vente">
+                    <div class="overlay">
+                        <h3>Tunnel de Vente</h3>
+                        <p>Optimisé pour la conversion</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Automatisation WhatsApp">
+                    <div class="overlay">
+                        <h3>Automatisation WhatsApp</h3>
+                        <p>Service client automatisé</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>Témoignages Clients</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"L'équipe a développé notre app mobile en un temps record. La qualité du code et le support sont exceptionnels !"</p>
+                    <cite>- Thomas Laurent, Startup Tech</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Notre site web est maintenant ultra-rapide et convertit bien mieux. Les développeurs ont vraiment compris nos besoins."</p>
+                    <cite>- Amélie Rousseau, E-commerce</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Application iOS et Android développées en parallèle. Excellent suivi et maintenance continue. Très professionnel !"</p>
+                    <cite>- Marc Leblanc, Consultant Digital</cite>
+                </div>
+            </div>
+        </section>
+        <div class="media-cta">
+            <a href="contact.html" class="cta-main">Réserver un appel stratégique</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Kagon’s Digital Agency. Tous droits réservés.</p>
+    </footer>
+    <script>
+        function toggleDropdown(event) {
+            event.preventDefault();
+            const dropdown = event.target.parentElement;
+            dropdown.classList.toggle('active');
+        }
+        // Chatbot script
+        const chatbot = document.getElementById('chatbot');
+        const toggle = document.getElementById('chatbot-toggle');
+        const chatWindow = document.getElementById('chat-window');
+        const closeChat = document.getElementById('close-chat');
+        const chatMessages = document.getElementById('chat-messages');
+        const chatInput = document.getElementById('chat-input');
+        const sendBtn = document.getElementById('send-btn');
+
+        toggle.addEventListener('click', () => {
+            chatWindow.style.display = chatWindow.style.display === 'block' ? 'none' : 'block';
+        });
+
+        closeChat.addEventListener('click', () => {
+            chatWindow.style.display = 'none';
+        });
+
+        sendBtn.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message) {
+                addMessage('user', message);
+                chatInput.value = '';
+                setTimeout(() => respond(message), 1000);
+            }
+        }
+
+        function addMessage(sender, text) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `message ${sender}`;
+            msgDiv.textContent = text;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function respond(userMessage) {
+            let response = "Désolé, je n'ai pas compris. Pouvez-vous reformuler ?";
+            const msg = userMessage.toLowerCase();
+            if (msg.includes('formation') || msg.includes('academy')) {
+                response = "Découvrez nos formations sur academy.html ! Elles couvrent marketing, IA, contenu, etc.";
+            } else if (msg.includes('contact') || msg.includes('devis')) {
+                response = "Contactez-nous via WhatsApp ou la page contact.html pour un devis.";
+            } else if (msg.includes('web') || msg.includes('site')) {
+                response = "Nous créons des sites web et automatisons vos processus. Voir web.html";
+            } else if (msg.includes('bonjour') || msg.includes('salut')) {
+                response = "Bonjour ! Comment puis-je vous aider avec Kagon’s Digital Agency ?";
+            }
+            addMessage('bot', response);
+        }
+
+        // Initial message
+        setTimeout(() => addMessage('bot', "Bonjour ! Je suis l'assistant de Kagon’s. Comment puis-je vous aider ?"), 2000);
+    </script>
+    <!-- Chatbot -->
+    <div id="chatbot">
+        <div id="chatbot-toggle"><i class="fas fa-comments"></i></div>
+        <div id="chat-window">
+            <div id="chat-header">Chat avec Kagon’s <span id="close-chat">×</span></div>
+            <div id="chat-messages"></div>
+            <div id="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Tapez votre message...">
+                <button id="send-btn">Envoyer</button>
+            </div>
+        </div>
+    </div>
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="Contactez-nous sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>

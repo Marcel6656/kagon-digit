@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Events Agency : Organisation d’événements professionnels et privés, gestion logistique et animation.">
+    <meta name="keywords" content="organisation événements, événements professionnels, animation événementielle">
+    <meta name="author" content="Kagon’s Digital Agency">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Events Agency | Kagon’s Digital Agency</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="assets/logo.jpg" alt="Kagon's Digital Agency Logo" class="logo-img"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#">Nos Pôles d'Expertise</a>
+                    <ul class="dropdown-content">
+                        <li><a href="academy.html">Kagon's Academy</a></li>
+                        <li><a href="media.html">Media & Vidéo</a></li>
+                        <li><a href="web.html">Web & Automation</a></li>
+                        <li><a href="marketing.html">Marketing & Stratégie</a></li>
+                        <li><a href="branding.html">Branding & Merch</a></li>
+                        <li><a href="events.html">Events Agency</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="academy.html#cta" class="cta-btn">S'inscrire / Devis</a>
+        </nav>
+    </header>
+    <main>
+        <section class="events-hero">
+            <h1>Events Agency</h1>
+            <p>Organisation d'événements professionnels et privés, gestion logistique, animation et communication événementielle.</p>
+        </section>
+        <section class="events-services">
+            <h2>Nos Services Événementiels</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Planification & Coordination</h3>
+                    <p>Organisation complète de vos événements du concept à la réalisation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-dolly"></i></div>
+                    <h3>Gestion Logistique</h3>
+                    <p>Transport, installation, décoration et matériel événementiel.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-microphone"></i></div>
+                    <h3>Animation & Divertissement</h3>
+                    <p>DJ, animateurs, spectacles et experiences inoubliables.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-megaphone"></i></div>
+                    <h3>Communication Event</h3>
+                    <p>Promotion, presse, réseaux sociaux et couverture média.</p>
+                </div>
+            </div>
+        </section>
+        <section class="media-gallery">
+            <h2>Nos Événements Réussis</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=400&q=80" alt="Événement 1">
+                    <div class="overlay">
+                        <h3>Conférence Professionnelle</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=400&q=80" alt="Événement 2">
+                    <div class="overlay">
+                        <h3>Soirée de Gala</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=400&q=80" alt="Événement 3">
+                    <div class="overlay">
+                        <h3>Lancement de Produit</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Événement 4">
+                    <div class="overlay">
+                        <h3>Team Building</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="media-testimonial">
+            <h2>Ils nous font confiance</h2>
+            <blockquote>
+                "Kagon’s Digital Agency a organisé notre événement corporate avec une perfection incroyable ! Tout était fluide, créatif et mémorable."
+                <span>— B. Client, Directeur Marketing</span>
+            </blockquote>
+        </section>
+        <div class="media-cta">
+            <a href="contact.html" class="cta-main">Demander un devis événementiel</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Kagon’s Digital Agency. Tous droits réservés.</p>
+    </footer>
+    <script>
+        function toggleDropdown(event) {
+            event.preventDefault();
+            const dropdown = event.target.parentElement;
+            dropdown.classList.toggle('active');
+        }
+    </script>
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="Contactez-nous sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>

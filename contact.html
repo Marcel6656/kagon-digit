@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Kagon’s Digital Agency pour devis, collaboration ou informations sur nos services.">
+    <meta name="keywords" content="contact agence digitale, devis, collaboration, services numériques">
+    <meta name="author" content="Kagon’s Digital Agency">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Contact | Kagon’s Digital Agency</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        function handleContactForm(e) {
+            e.preventDefault();
+            document.getElementById('contact-form').style.display = 'none';
+            document.getElementById('contact-success').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="assets/logo.jpg" alt="Kagon's Digital Agency Logo" class="logo-img"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)">Nos Pôles d'Expertise</a>
+                    <ul class="dropdown-content">
+                        <li><a href="academy.html">Kagon's Academy</a></li>
+                        <li><a href="media.html">Media & Vidéo</a></li>
+                        <li><a href="web.html">Web & Automation</a></li>
+                        <li><a href="marketing.html">Marketing & Stratégie</a></li>
+                        <li><a href="branding.html">Branding & Merch</a></li>
+                        <li><a href="events.html">Events Agency</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="academy.html#cta" class="cta-btn">S'inscrire / Devis</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h1>Contactez-nous</h1>
+            <p>Pour toute demande de devis, de collaboration ou d’information, remplissez le formulaire ci-dessous.</p>
+            <form class="contact-form" id="contact-form" onsubmit="handleContactForm(event)">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+            <div id="contact-success" class="success-message" style="display:none;">
+                Merci ! Votre message a bien été envoyé (simulation).<br>Notre équipe vous répondra rapidement.
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Kagon’s Digital Agency. Tous droits réservés.</p>
+    </footer>
+    <script>
+        function toggleDropdown(event) {
+            event.preventDefault();
+            const dropdown = event.target.parentElement;
+            dropdown.classList.toggle('active');
+        }
+    </script>
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="Contactez-nous sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>

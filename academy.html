@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kagon’s Digital Academy : Formations en marketing, IA, création de contenu et vente. Devenez expert du numérique.">
+    <meta name="keywords" content="formation digitale, marketing digital, intelligence artificielle, création de contenu, personal branding">
+    <meta name="author" content="Kagon’s Digital Agency">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Kagon’s Digital Academy | Formations & Coaching</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="assets/logo.jpg" alt="Kagon's Digital Agency Logo" class="logo-img"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)">Nos Pôles d'Expertise</a>
+                    <ul class="dropdown-content">
+                        <li><a href="academy.html">Kagon's Academy</a></li>
+                        <li><a href="media.html">Media & Vidéo</a></li>
+                        <li><a href="web.html">Web & Automation</a></li>
+                        <li><a href="marketing.html">Marketing & Stratégie</a></li>
+                        <li><a href="branding.html">Branding & Merch</a></li>
+                        <li><a href="events.html">Events Agency</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#cta" class="cta-btn">S'inscrire / Devis</a>
+        </nav>
+    </header>
+    <main>
+        <section class="academy-hero">
+            <h1>Devenez un Expert du Numérique avec Kagon’s Digital Academy</h1>
+            <p>Maîtrisez les outils de demain pour propulser votre carrière ou votre entreprise.<br>
+            Formations disponibles en présentiel, en ligne ou via un coaching personnalisé.</p>
+        </section>
+        <section class="academy-programs">
+            <h2>Nos Programmes de Formation</h2>
+            <div class="program-cards">
+                <div class="program-card">
+                    <div class="program-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Marketing & Stratégie</h3>
+                    <p>Apprenez le marketing digital du niveau débutant à avancé.</p>
+                    <a href="#cta" class="program-link">En savoir plus</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon"><i class="fas fa-video"></i></div>
+                    <h3>Création de Contenu</h3>
+                    <p>Maîtrisez la création de contenus pour les réseaux sociaux et le montage vidéo sur smartphone.</p>
+                    <a href="#cta" class="program-link">En savoir plus</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Spécialisez-vous dans la création de vidéos avec l'IA.</p>
+                    <a href="#cta" class="program-link">En savoir plus</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <h3>Vente & Conversion</h3>
+                    <p>Apprenez à concevoir des sites web, des tunnels de vente et des systèmes d'automatisation marketing.</p>
+                    <a href="#cta" class="program-link">En savoir plus</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon"><i class="fas fa-star"></i></div>
+                    <h3>Image de Marque</h3>
+                    <p>Développez votre Personal Branding et votre influence.</p>
+                    <a href="#cta" class="program-link">En savoir plus</a>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>Témoignages Étudiants</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Les formations de Kagon’s Academy m'ont permis de lancer ma carrière en marketing digital. Excellente qualité !"</p>
+                    <cite>- Alice Dupont, Marketeuse</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Le coaching personnalisé m'a aidé à maîtriser l'IA pour mes vidéos. Formation top niveau."</p>
+                    <cite>- Paul Martin, Créateur de Contenu</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Grâce à ces formations, j'ai boosté mes ventes en ligne. Merci Kagon’s !"</p>
+                    <cite>- Sophie Leroy, Entrepreneur</cite>
+                </div>
+            </div>
+        </section>
+        <section class="academy-cta" id="cta">
+            <h2>Prêt à rejoindre l’Academy ?</h2>
+            <p>Inscrivez-vous dès maintenant et boostez votre avenir digital !</p>
+            <a href="https://wa.me/1234567890?text=Bonjour%20Kagon%E2%80%99s%20Digital%20Agency,%20je%20souhaite%20m%E2%80%99inscrire%20%C3%A0%20une%20formation.%20Pouvez-vous%20me%20donner%20plus%20d%E2%80%99informations%20?" class="cta-main" target="_blank">S'inscrire à une formation</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Kagon’s Digital Agency. Tous droits réservés.</p>
+    </footer>
+    <script>
+        function toggleDropdown(event) {
+            event.preventDefault();
+            const dropdown = event.target.parentElement;
+            dropdown.classList.toggle('active');
+        }
+        // Chatbot script
+        const chatbot = document.getElementById('chatbot');
+        const toggle = document.getElementById('chatbot-toggle');
+        const chatWindow = document.getElementById('chat-window');
+        const closeChat = document.getElementById('close-chat');
+        const chatMessages = document.getElementById('chat-messages');
+        const chatInput = document.getElementById('chat-input');
+        const sendBtn = document.getElementById('send-btn');
+
+        toggle.addEventListener('click', () => {
+            chatWindow.style.display = chatWindow.style.display === 'block' ? 'none' : 'block';
+        });
+
+        closeChat.addEventListener('click', () => {
+            chatWindow.style.display = 'none';
+        });
+
+        sendBtn.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message) {
+                addMessage('user', message);
+                chatInput.value = '';
+                setTimeout(() => respond(message), 1000);
+            }
+        }
+
+        function addMessage(sender, text) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `message ${sender}`;
+            msgDiv.textContent = text;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function respond(userMessage) {
+            let response = "Désolé, je n'ai pas compris. Pouvez-vous reformuler ?";
+            const msg = userMessage.toLowerCase();
+            if (msg.includes('formation') || msg.includes('academy')) {
+                response = "Découvrez nos formations sur academy.html ! Elles couvrent marketing, IA, contenu, etc.";
+            } else if (msg.includes('contact') || msg.includes('devis')) {
+                response = "Contactez-nous via WhatsApp ou la page contact.html pour un devis.";
+            } else if (msg.includes('web') || msg.includes('site')) {
+                response = "Nous créons des sites web et automatisons vos processus. Voir web.html";
+            } else if (msg.includes('bonjour') || msg.includes('salut')) {
+                response = "Bonjour ! Comment puis-je vous aider avec Kagon’s Digital Agency ?";
+            }
+            addMessage('bot', response);
+        }
+
+        // Initial message
+        setTimeout(() => addMessage('bot', "Bonjour ! Je suis l'assistant de Kagon’s. Comment puis-je vous aider ?"), 2000);
+    </script>
+    <!-- Chatbot -->
+    <div id="chatbot">
+        <div id="chatbot-toggle"><i class="fas fa-comments"></i></div>
+        <div id="chat-window">
+            <div id="chat-header">Chat avec Kagon’s <span id="close-chat">×</span></div>
+            <div id="chat-messages"></div>
+            <div id="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Tapez votre message...">
+                <button id="send-btn">Envoyer</button>
+            </div>
+        </div>
+    </div>
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="Contactez-nous sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>
